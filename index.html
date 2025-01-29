@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sara</title>
+    <style>
+        /*CSS goes here*/
+        body{
+            background-color: rgb(180, 0, 0);
+            color:white;
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+            outline-color: #FF647F;
+            outline-style: dotted;
+        }
+        button{
+            width:100px;
+            height:100px;
+        }
+        #heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+        }
+        #heart::before, #heart::after {
+            content: "YES!!!";
+            align-content: center;
+            position: absolute;
+            top: 10px;
+            width: 50px;
+            height: 80px;
+            border-radius: 50px 50px 0 0;
+            background: red;
+        }
+
+        #heart::before {
+            left: 48px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        #heart::after {
+            left: -2px;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        img {
+            display: block;
+            margin: 50px auto 0;
+            width: 600px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>HAPPY VALENTINES DAY</h1>
+
+    <h3>Will you be my valentine?</h3>
+
+    <button id = heart class = "button" style = "background-color:pink;" onclick="location.href='yes.html'" >YES</button>
+    <button class = "button" style = "background-color:pink" onclick="location.href='no.html'">no</button>
+
+    <img src="./Image.jpg" style="width:600px"> 
+
+</body>
+</html>
